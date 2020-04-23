@@ -22,7 +22,7 @@ import br.com.msansone.mymoney.api.service.UsuarioService;
 @Transactional(value = TxType.REQUIRED)
 @RestController
 @RequestMapping("/seguranca")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class UsuarioController {
 	
 	private static Logger LOG = Logger.getLogger("DespesaController");

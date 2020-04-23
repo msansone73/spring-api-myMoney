@@ -24,7 +24,7 @@ import br.com.msansone.mymoney.api.service.DespesaService;
 @Transactional(value = TxType.REQUIRED)
 @RestController
 @RequestMapping("/despesa")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class DespesaController {
 	
 	private static Logger LOG = Logger.getLogger("DespesaController");
