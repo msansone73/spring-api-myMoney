@@ -34,7 +34,7 @@ public class DespesaController {
 
 	@GetMapping("/usuario/{idUsuario}")
 	public List<Despesa> getDespesaByUsuarioId(@PathVariable Long idUsuario){
-		LOG.info(".../despesa/usuario/"+idUsuario);
+		LOG.info("GET - .../despesa/usuario/"+idUsuario);
 		List<Despesa> lista = despesaService.getAllByIdusuario(idUsuario);
 		return lista;
 	}
